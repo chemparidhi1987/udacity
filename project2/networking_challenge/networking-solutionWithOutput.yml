@@ -166,7 +166,7 @@ Outputs:
         Description: A list of the private subnets
         Value: !Join [ ",", [ !Ref PrivateSubnet1 ]]
         Export:
-          Name: !Sub ${EnvironmentName}-PRI-NETS
+          Name: !Sub ${EnvironmentName}-PRIV-NETS
 
     PublicSubnet1:
         Description: A reference to the public subnet in the 1st Availability Zone
